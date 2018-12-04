@@ -107,15 +107,15 @@ describe('orderPair utility', () => {
       'DNhP2zAH5HM1kdUSmxcBqs8RP4vvUgRFc1YgAKkfPmPD',
     ]);
   });
-  it('orders [USD, WAVES] in [WAVES, USD]', () => {
+  it('orders [USD, EARTHS] in [EARTHS, USD]', () => {
     expect(
-      orderPair('Ft8X1v1LTa1ABafufpaCWyVj8KkaxUWE6xBhW6sNFJck', 'WAVES')
-    ).toEqual(['WAVES', 'Ft8X1v1LTa1ABafufpaCWyVj8KkaxUWE6xBhW6sNFJck']);
+      orderPair('Ft8X1v1LTa1ABafufpaCWyVj8KkaxUWE6xBhW6sNFJck', 'EARTHS')
+    ).toEqual(['EARTHS', 'Ft8X1v1LTa1ABafufpaCWyVj8KkaxUWE6xBhW6sNFJck']);
   });
-  it('orders [WAVES, USD] in [WAVES, USD]', () => {
+  it('orders [EARTHS, USD] in [EARTHS, USD]', () => {
     expect(
-      orderPair('WAVES', 'Ft8X1v1LTa1ABafufpaCWyVj8KkaxUWE6xBhW6sNFJck')
-    ).toEqual(['WAVES', 'Ft8X1v1LTa1ABafufpaCWyVj8KkaxUWE6xBhW6sNFJck']);
+      orderPair('EARTHS', 'Ft8X1v1LTa1ABafufpaCWyVj8KkaxUWE6xBhW6sNFJck')
+    ).toEqual(['EARTHS', 'Ft8X1v1LTa1ABafufpaCWyVj8KkaxUWE6xBhW6sNFJck']);
   });
   it('works with custom predefinedList', () => {
     const customOrderPair = createOrderPair(['1', '2']);

@@ -1,15 +1,15 @@
 # Utility for ordering pair of assets in (amount_asset, price_asset)
 
-![Build Status](https://api.travis-ci.org/wavesplatform/assets-pairs-order.svg?branch=master)
+![Build Status](https://api.travis-ci.org/earthspay/assets-pairs-order.svg?branch=master)
 
 ## Example:
 
 ```
-yarn add @waves/assets-pairs-order
+yarn add @earths/assets-pairs-order
 ```
 
 ```javascript
-import { createOrderPair, MAINNET_DATA } from '@waves/assets-pairs-order'
+import { createOrderPair, MAINNET_DATA } from '@earths/assets-pairs-order'
 
 const orderPair = createOrderPair(MAINNET_DATA);
 orderPair(
